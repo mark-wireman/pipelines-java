@@ -32,5 +32,6 @@ jobs:
         with:
           api-key: ${{ secrets.BC_API_KEY }}
           framework: sca_package
-          args: --soft-fail-on
+          output: JSON
+          soft-fail: on
       
