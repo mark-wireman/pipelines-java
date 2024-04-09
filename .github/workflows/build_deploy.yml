@@ -32,9 +32,9 @@ jobs:
         with:
           api-key: ${{ secrets.BC_API_KEY }}
           framework: sca_package
-          output_format: html
+          output_format: csv
           soft_fail: on
-          file: output/test/code-coverage.html
+          file: output/test/code-coverage.csv
       - name: Archive code coverage results
         uses: actions/upload-artifact@v4
         with:
