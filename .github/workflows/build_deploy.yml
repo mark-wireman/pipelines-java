@@ -11,7 +11,7 @@ env:
 jobs:
   
   greeting_job:
-    runs-on: ubuntu-latest
+    runs-on: dharmasvr2
     permissions: 
       contents: read
       packages: write
