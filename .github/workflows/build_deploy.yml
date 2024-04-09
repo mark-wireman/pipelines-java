@@ -34,6 +34,7 @@ jobs:
           framework: sca_package
           output_format: cyclonedx_json
           soft_fail: on
+          file: output/test/code-coverage.html
       - name: Archive code coverage results
         uses: actions/upload-artifact@v4
         with:
