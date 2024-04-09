@@ -35,6 +35,7 @@ jobs:
           output_format: csv
           soft_fail: on
           file: output/test/code-coverage.csv
+          logging_level: debug
       - name: Archive code coverage results
         uses: actions/upload-artifact@v4
         with:
