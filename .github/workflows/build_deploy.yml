@@ -11,7 +11,8 @@ env:
 jobs:
   
   greeting_job:
-    runs-on: [self-hosted, linux, ARM64]
+    runs-on:
+      labels: dharmasvr2
     permissions: 
       contents: read
       packages: write
