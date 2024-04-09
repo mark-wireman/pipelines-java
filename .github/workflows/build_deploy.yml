@@ -32,7 +32,7 @@ jobs:
         with:
           api-key: ${{ secrets.BC_API_KEY }}
           framework: sca_package
-          output_format: cyclonedx_json
+          output_format: html
           soft_fail: on
           file: output/test/code-coverage.html
       - name: Archive code coverage results
