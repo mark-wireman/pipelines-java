@@ -36,8 +36,7 @@ jobs:
           output_file_path: sbom
           soft_fail_on: MEDIUM
           hard_fail_on: CRITICAL
-          skip_download: --skip-download
-          skip_check: CRITICAL
+          skip_check: HIGH
 
       - name: Create file status_build.txt and write the job status into it
         if: always()
