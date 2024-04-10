@@ -1,4 +1,4 @@
-name: Greeting on variable day
+name: Pipeline Java Sample
 
 on:
   push
@@ -35,8 +35,8 @@ jobs:
           output_format: cyclonedx
           output_file_path: sbom
           soft_fail_on: MEDIUM
-          hard_fail_on: CRITICAL
-          skip_check: HIGH
+          hard_fail_on: HIGH
+          skip_check: LOW
 
       - name: Create file status_build.txt and write the job status into it
         if: always()
